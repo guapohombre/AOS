@@ -65,11 +65,8 @@ img {
 }
 
 .card img {
-  object-fit: cover;
-}
-
-.card img {
   height: 400px;
+  /* border: 3px solid red; */
 }
 
 .card > div {
@@ -93,9 +90,15 @@ img {
   opacity: 0.8;
 }
 
-@media (max-width: 700px) {
-  .card {
-    display: block;
+@media (max-width: 1000px) {
+  .card img {
+    height: 450px;
+  }
+}
+
+@media (max-width: 850px) {
+  .card img {
+    height: 500px;
   }
 }
 
@@ -109,5 +112,15 @@ img {
   }
   .main-header p {
     font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .card {
+    display: block;
+  }
+
+  .card img {
+    height: auto;
   }
 }

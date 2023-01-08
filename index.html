@@ -10,8 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
+
     <title>Acrylic Painting Gallery</title>
   </head>
   <body>
@@ -36,7 +37,7 @@
           <a href="#" class="btn">Buy Now</a>
         </div>
       </section>
-      <section class="card">
+      <section class="card" data-aos="fade-left">
         <img
           src="https://i.ibb.co/3NHjDcW/paint-2.png"
           alt="image 2"
@@ -53,7 +54,7 @@
           <a href="#" class="btn">Buy Now</a>
         </div>
       </section>
-      <section class="card">
+      <section class="card" data-aos="fade-right">
         <img
           src="https://i.ibb.co/0VywMkW/paint-3.png"
           alt="image 3"
@@ -70,7 +71,7 @@
           <a href="#" class="btn">Buy Now</a>
         </div>
       </section>
-      <section class="card">
+      <section class="card" data-aos="fade-left">
         <img
           src="https://i.ibb.co/5LkJFRP/paint-4.png"
           alt="image 4"
@@ -87,7 +88,7 @@
           <a href="#" class="btn">Buy Now</a>
         </div>
       </section>
-      <section class="card">
+      <section class="card" data-aos="fade-right">
         <img
           src="https://i.ibb.co/61R8Q2y/paint-5.png"
           alt="image 5"
@@ -105,5 +106,13 @@
         </div>
       </section>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 400,
+        duration: 1000,
+      });
+    </script>
+    <script src="main.js"></script>
   </body>
 </html>
